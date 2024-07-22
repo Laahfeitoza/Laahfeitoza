@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição no Programa de Estudos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background: #fff;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        
+    
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+          
+        }
+        .form-group input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+          
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .mensagem {
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Inscreva-se no Programa de Estudos</h1>
+        <form id="registro-form">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Inscrever-se">
+            </div>
+        </form>
+        <div id="mensagem-confirmacao" class="mensagem" style="display: none;">
+            Obrigado por se inscrever! Você será redirecionado para o site do parceiro em breve.
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('registro-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio do formulário padrão
+
+            // Coleta os dados do formulário
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+            var telefone = document.getElementById('telefone').value;
+
+            // Mensagem de confirmação - aqui
+            document.getElementById('mensagem-confirmacao').style.display = 'block';
+
+            // Redireciona para a página que eu preferir após 3 segundos
+            setTimeout(function() {
+                window.location.href = 'https://www.coursera.org/courseraplus?adgroupid=1251245545933400&adposition=&authMode=signup&campaignid=662663672&creativeid=&device=c&devicemodel=&hide_mobile_promo&keyword=coursera&matchtype=e&msclkid=c655e7966df414187bf48108138167f5&network=o&utm_campaign=B2C_LATAM__coursera_FTCOF_courseraplus&utm_content=Coursera+Plus+-+LATAM+-+All+KWs&utm_medium=sem&utm_source=bg&utm_term=coursera'; 
+            }, 3000);
+        });
+    </script>
+</body>
+</html>

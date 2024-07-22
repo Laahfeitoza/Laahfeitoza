@@ -1,0 +1,173 @@
+/* CSS */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 5vw;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    background: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+nav img {
+    height: auto;
+    width: 250px;
+    cursor: pointer;
+ 
+}
+
+nav .navegacao ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navegacao ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .navegacao ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+    padding: 10px; 
+    display: inline-block;
+    
+}
+
+nav .navegacao ul li a:hover {
+    color: rgb(255, 17, 0);
+    cursor: pointer;
+    
+    
+}
+/*NAVEGAÇÃO - FIM*/
+
+
+
+
+/*HOME - INICIO*/
+#home{
+    width: 100%;
+    padding-top: 90px;
+    text-align: center;
+    position: relative;
+    height: auto;
+
+}
+
+#home img{
+    height: auto;
+    display: flex; 
+    width: 100%;
+    height: auto;
+    
+}
+
+
+/*HOME - FIM*/
+
+
+
+
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.main-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 20px auto;
+    padding-left: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.button {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: #28a745;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background: #218838;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    background: #1e7e34;
+    transform: translateY(0);
+}
+
+.cta-section {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.cta-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+

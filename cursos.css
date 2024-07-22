@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100%; 
+    text-decoration: none;
+}
+
+/*NAVEGAÇÃO - INICIO*/
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 5vw;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    background: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+nav img {
+    height: auto;
+    width: 250px;
+    cursor: pointer;
+ 
+}
+
+nav .navegacao ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navegacao ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .navegacao ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+    padding: 10px; 
+    display: inline-block;
+    
+}
+
+nav .navegacao ul li a:hover {
+    color: rgb(255, 17, 0);
+    cursor: pointer;
+    
+    
+}
+/*NAVEGAÇÃO - FIM*/
+
+
+
+
+/*HOME - INICIO*/
+#home{
+    width: 100%;
+    padding-top: 90px;
+    text-align: center;
+    position: relative;
+    height: auto;
+
+}
+
+#home img{
+    height: auto;
+    display: flex; 
+    width: 100%;
+    height: auto;
+    
+}
+
+
+/*HOME - FIM*/
+
+
+
+
+
+/*Cursos*/
+.cursos {
+    padding: 20px;
+
+}
+
+.center-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.center-text h1 {
+    font-size: 40PX;
+    color: #006dff;
+    margin-top: 100PX;
+    margin-bottom: 100PX;
+}
+
+
+.cursos-conteudo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 0px 200px 0px 200px;
+    background: #006eff91;
+   padding-top: 70px;
+   padding-bottom: 100px;
+}
+
+.curso-item {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    transition: all .40s ease;
+  
+}
+
+.curso-item:hover{
+    transform: translateY(-15px);
+}
+
+.curso-item img {
+    width: 100%;
+    height: 150px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+  
+}
+
+
+.cursos-text h5 {
+    font-size: 10px;
+    color: #666;
+}
+
+.cursos-text h3 {
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.qualidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.stat a {
+    color: #f39c12;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.review p {
+    font-size: 10px;
+    color: #555;
+    margin-left: 10px;
+}
+
+/*fim*/
+
+
+/* e inicio do fim tbm*/
+
+ /*INICIO do rodapé*/
+ footer {
+    
+    background-color: #006dff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    color: white;
+    font-weight: 700;
+    margin: 0;
+}
+
+ /*fim do rodape*/
